@@ -1,0 +1,10 @@
+<div class="pricing-container">
+  <h1 class="price-title">Preço Original: <span class="price-value">R$ {{ originalPrice() }}</span></h1>
+  <h2 class="discount-title">Desconto: <span class="discount-value">{{ discount() }}%</span></h2>
+  <h2 class="final-price-title">Preço Final: <span class="final-price-value">R$ {{ finalPrice() }}</span></h2>
+
+  <div class="buttons-container">
+    <button class="btn increase" (click)="increaseDiscount()">Aumentar Desconto</button>
+    <button class="btn decrease" (click)="decreaseDiscount()">Diminuir Desconto</button>
+  </div>
+</div>
